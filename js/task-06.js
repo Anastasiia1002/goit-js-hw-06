@@ -17,7 +17,7 @@ function onInputBlur() {
           inputName.classList.remove(`invalid`);
         inputName.classList.add(`valid`);
        
-    } else {
+    } else if (inputName.value.length > +inputName.dataset.length){
         inputName.classList.remove(`valid`);  
         inputName.classList.add(`invalid`); 
    }
